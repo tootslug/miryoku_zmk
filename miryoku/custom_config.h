@@ -46,7 +46,7 @@ U_NP,              U_NP,              &mo U_DOTAMOD,     &kp SPACE,         &kp 
 #define MIRYOKU_LAYER_DOTAMOD \
 &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   \
 &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   \
-&trans,   &trans,   &trans,   &kp LALT,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   \
+&trans,   &kp ESC,   &trans,   &kp LALT,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   \
 U_NP,     U_NP,     &trans,   &kp LCTRL,   &trans,   &trans, U_NU,     U_NU,     U_NP,     U_NP
 
 
