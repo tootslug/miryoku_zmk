@@ -33,7 +33,7 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 #define MIRYOKU_LAYER_FUN \
 &kp F12,           &kp F7,            &kp F8,            &kp F9,            &kp PSCRN,         &u_to_U_BASE,     &u_to_U_EXTRA,      &u_to_U_DOTA,      &u_to_U_TAP,       &u_to_U_HALO,            \
 &kp F11,           &kp F4,            &kp F5,            &kp F6,            &kp SLCK,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-&kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          U_NA,              \
+&kp F10,           &kp F1,            &kp F2,            &kp F3,            &kp PAUSE_BREAK,   U_NA,              &u_to_U_FUN,       &u_to_U_MEDIA,     &kp RALT,          &u_to_U_WOW,              \
 U_NP,              U_NP,              &kp K_APP,         &kp SPACE,         &kp TAB,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 // Dota game layer
@@ -63,6 +63,26 @@ U_NP,     U_NP,     &mo U_HALOMOD,  &kp SPC,  &kp TAB,  &kp RET,  &kp BSPC, &to 
 &trans,   &kp ESC,   &trans,   &kp LALT,   &trans,   &trans,   &trans,   &trans,   &trans,   &trans,   \
 U_NP,     U_NP,     &trans,   &kp LCTRL,   &trans,   &trans, U_NU,     U_NU,     U_NP,     U_NP
 
+// WOW/MMO game layer
+#define MIRYOKU_LAYER_WOW \
+&kp SQT,           &kp COMMA,         &kp DOT,           &kp P,             &kp Y,             &kp F,             &kp G,             &kp C,             &kp R,             &kp L,             \
+&kp A,             &kp O,             &kp E,             &kp U,             &kp I,             &kp D,             &kp H,             &kp T,             &kp N,             &kp S,             \
+&kp LSHFT,         &kp Q,             &kp J,             &kp K,             &kp X,             &kp B,             &kp M,             &kp W,             &kp V,             &kp Z,             \
+U_NP,              U_NP,              &mo U_WOWMOD,      &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &to U_BASE,        U_NP,              U_NP
+
+#define MIRYOKU_LAYER_WOWMOD \
+&kp LA(SQT),       &kp LA(COMMA),     &kp LA(DOT),       &kp LA(P),         &kp LA(Y),         &kp ESC,           &trans,            &trans,            &trans,            &trans,            \
+&kp LA(A),         &kp LA(O),         &kp LA(E),         &kp LA(U),         &kp LA(I),         &trans,            &trans,            &trans,            &trans,            &trans,            \
+&trans,            &kp LA(Q),         &kp LA(J),         &kp LA(K),         &kp LA(X),         &trans,            &trans,            &trans,            &trans,            &trans,            \
+U_NP,              U_NP,              &trans,            &mo U_WOWMOD2,     &trans,            &trans,            &trans,            &trans,            U_NP,              U_NP
+
+#define MIRYOKU_LAYER_WOWMOD2 \
+&kp LC(SQT),       &kp LC(COMMA),     &kp LC(DOT),       &kp LC(P),         &kp LC(Y),         &trans,            &trans,            &trans,            &trans,            &trans,            \
+&kp LC(A),         &kp LC(O),         &kp LC(E),         &kp LC(U),         &kp LC(I),         &trans,            &trans,            &trans,            &trans,            &trans,            \
+&trans,            &kp LC(Q),         &kp LC(J),         &kp LC(K),         &kp LC(X),         &trans,            &trans,            &trans,            &trans,            &trans,            \
+U_NP,              U_NP,              &trans,            &trans,            &trans,            &trans,            &trans,            &trans,            U_NP,              U_NP
+
+
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,     "WIN") \
 MIRYOKU_X(EXTRA,    "MAC") \
@@ -78,13 +98,19 @@ MIRYOKU_X(BUTTX,    "Buttx") \
 MIRYOKU_X(DOTA,     "DOTA") \
 MIRYOKU_X(DOTAMOD,  "DOTAM") \
 MIRYOKU_X(HALO,     "HALO") \
-MIRYOKU_X(HALOMOD,  "HALOM")
+MIRYOKU_X(HALOMOD,  "HALOM") \
+MIRYOKU_X(WOW,      "WOW") \
+MIRYOKU_X(WOWMOD,   "WOWM") \
+MIRYOKU_X(WOWMOD2,  "WOWM2") 
 
 #define MIRYOKU_LAYERMAPPING_BUTTX MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_DOTA MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_DOTAMOD MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_HALO MIRYOKU_MAPPING
 #define MIRYOKU_LAYERMAPPING_HALOMOD MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_WOW MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_WOWMOD MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_WOWMOD2 MIRYOKU_MAPPING
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -101,3 +127,6 @@ MIRYOKU_X(HALOMOD,  "HALOM")
 #define U_DOTAMOD  12
 #define U_HALO    13
 #define U_HALOMOD 14
+#define U_WOW    15
+#define U_WOWMOD 16
+#define U_WOWMOD2 17
